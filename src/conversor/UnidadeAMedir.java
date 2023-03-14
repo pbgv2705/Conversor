@@ -1,27 +1,33 @@
 package conversor;
 
 public class UnidadeAMedir {
-	private String Nome;
-	private String Tipo;
-	private String Simbolo;
+	private String nome;
+	private String tipo;
+	private String simbolo;
+	
+	public UnidadeAMedir(String nome, String tipo, String simbolo) {
+		this.nome = nome;
+		this.tipo = tipo;
+		this.simbolo = simbolo;
+	}
 	
 	public String getNome() {
-		return Nome;
+		return nome;
 	}
 	public void setNome(String nome) {
-		Nome = nome;
+		this.nome = nome;
 	}
 	public String getTipo() {
-		return Tipo;
+		return tipo;
 	}
 	public void setTipo(String tipo) {
-		Tipo = tipo;
+		this.tipo = tipo;
 	}
 	public String getSimbolo() {
-		return Simbolo;
+		return this.simbolo;
 	}
 	public void setSimbolo(String simbolo) {
-		Simbolo = simbolo;
+		this.simbolo = simbolo;
 	}
 	
 	
